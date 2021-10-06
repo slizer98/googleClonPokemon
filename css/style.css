@@ -31,12 +31,13 @@ header nav{
     justify-content: flex-end;
 }
 header nav .nav-right-section{
-    width: 250px;
+    width: auto;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center; 
     list-style: none;
+    padding-left: 0;
 }
 nav .nav-right-section a{
     margin-right: 10px;
@@ -74,7 +75,7 @@ nav .nav-right-section img{
 }
 main{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -196,4 +197,35 @@ footer ul li a{
     margin: 10px;
     color: #fff;
     font-weight: bold;
+    text-align: justify;
 }
+
+@media(max-width: 600px){
+    header{
+        width: 600px;
+    }
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav .nav-right-section{
+        padding-left: 10px;
+    }
+    main{
+        width: 600px;
+        display: flex;
+        /* height: 700px; */
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    footer{
+        width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* position: none; */
+    }   
+}
+
